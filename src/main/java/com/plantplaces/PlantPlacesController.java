@@ -3,9 +3,15 @@ package com.plantplaces;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * Handle the /start endpoints
+ *return
+ *
+ */
 @Controller
 
 public class PlantPlacesController {
+	
 	
 	@RequestMapping("/start")
 	
@@ -15,4 +21,11 @@ public class PlantPlacesController {
 		
 	}
 
+	@RequestMapping("/")
+	
+	public String index()
+	{
+		return "start";
+		
+	}
 }
